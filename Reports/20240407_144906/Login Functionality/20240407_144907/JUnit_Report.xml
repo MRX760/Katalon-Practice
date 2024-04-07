@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login Functionality" time="33.743" tests="5" failures="0" errors="0">
+   <testsuite name="Login Functionality" tests="5" failures="0" errors="0" time="33.743" skipped="0" timestamp="07-04-2024T14:49:11" hostname="tan - LOQ15" id="Test Suites/Login Functionality">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_144906\\Login Functionality\\20240407_144907"/>
+         <property name="logFiles" value="C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_144906\\Login Functionality\\20240407_144907\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="tan - LOQ15"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.4.0.212"/>
+         <property name="browser" value="Firefox 124.0"/>
+         <property name="hostAddress" value="192.168.1.8"/>
+         <property name="sessionId" value="949e95ca-2090-4cf6-99db-ab657834c78c"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials" time="8.887" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials" status="PASSED">
+         <system-out><![CDATA[07-04-2024T14:49:11 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials
+
+07-04-2024T14:49:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T14:49:12 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T14:49:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T14:49:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T14:49:15 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:16 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T14:49:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T14:49:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name"), username): Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T14:49:17 - [MESSAGE][PASSED] - Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T14:49:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_password")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T14:49:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T14:49:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password"), password): Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T14:49:17 - [MESSAGE][PASSED] - Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T14:49:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:17 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/span_Products"), 0): Object 'Object Repository/Page_Swag Labs/span_Products' is present
+
+07-04-2024T14:49:17 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T14:49:17 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/span_Products' is present
+
+07-04-2024T14:49:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T14:49:20 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials" time="7.648" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials" status="PASSED">
+         <system-out><![CDATA[07-04-2024T14:49:20 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials
+
+07-04-2024T14:49:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T14:49:20 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T14:49:20 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T14:49:23 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T14:49:23 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:25 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:25 - [TEST_STEP][PASSED] - comment("Negative test case begin here"): Negative test case begin here
+
+07-04-2024T14:49:25 - [MESSAGE][INFO] - Negative test case begin here
+
+07-04-2024T14:49:25 - [TEST_STEP][PASSED] - comment("Case 1: Empty username & password"): Case 1: Empty username & password
+
+07-04-2024T14:49:25 - [MESSAGE][INFO] - Case 1: Empty username & password
+
+07-04-2024T14:49:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:25 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-username"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T14:49:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T14:49:25 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T14:49:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T14:49:28 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password" time="4.887" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password" status="PASSED">
+         <system-out><![CDATA[07-04-2024T14:49:28 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password
+
+07-04-2024T14:49:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T14:49:28 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T14:49:28 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T14:49:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T14:49:30 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:31 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T14:49:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T14:49:32 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_user-name"), username): Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T14:49:32 - [MESSAGE][PASSED] - Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T14:49:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:32 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-password"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+
+07-04-2024T14:49:32 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T14:49:32 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+
+07-04-2024T14:49:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T14:49:33 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username" time="5.377" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username" status="PASSED">
+         <system-out><![CDATA[07-04-2024T14:49:33 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username
+
+07-04-2024T14:49:33 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T14:49:33 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T14:49:33 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T14:49:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T14:49:35 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:37 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_password")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T14:49:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T14:49:37 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password"), password): Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T14:49:37 - [MESSAGE][PASSED] - Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T14:49:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:37 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-username"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T14:49:37 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T14:49:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T14:49:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T14:49:38 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials" time="6.743" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials" status="PASSED">
+         <system-out><![CDATA[07-04-2024T14:49:38 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials
+
+07-04-2024T14:49:38 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T14:49:38 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T14:49:38 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T14:49:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T14:49:40 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:41 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T14:49:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T14:49:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T14:49:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name"), "awd"): Text 'awd' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T14:49:41 - [MESSAGE][PASSED] - Text 'awd' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T14:49:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_password")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T14:49:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T14:49:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password"), "wad"): Text 'wad' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T14:49:42 - [MESSAGE][PASSED] - Text 'wad' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T14:49:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T14:49:42 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-wrong-credentials"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-wrong-credentials' is present
+
+07-04-2024T14:49:42 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T14:49:42 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-wrong-credentials' is present
+
+07-04-2024T14:49:42 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T14:49:45 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[07-04-2024T14:49:11 - [TEST_SUITE][PASSED] - Login Functionality: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
