@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user cannot login using only password</description>
+   <name>Empty username</name>
+   <tag>login-002</tag>
+   <comment></comment>
+   <testCaseGuid>a21916c5-e2a6-425a-b959-ecd817162106</testCaseGuid>
+</TestCaseEntity>
