@@ -5,7 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>3</numberOfRerun>
+   <numberOfRerun>1</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -24,18 +24,6 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3598d439-0599-4736-a10e-a70b751c1ee8</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5aa60327-83b2-4430-aaa3-cf90ed05b2f1</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>ff69d216-2457-46b3-a7e2-b819b6953a25</guid>

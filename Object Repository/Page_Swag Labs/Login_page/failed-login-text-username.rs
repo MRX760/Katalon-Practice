@@ -4,6 +4,7 @@
    <name>failed-login-text-username</name>
    <tag></tag>
    <elementGuidId>9cbd1596-9dc6-4c1b-9b51-e8e9702d41f8</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -17,6 +18,10 @@
          <key>CSS</key>
          <value>color: #132322;</value>
       </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorCollection>
@@ -25,7 +30,7 @@
          <value>[data-test=&quot;error-button&quot;]</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <smartLocatorEnabled>true</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>error-message-container error</value>
-      <webElementGuid>b4165d49-9d27-4fb7-b8bb-ca53ad7d8fef</webElementGuid>
+      <webElementGuid>f96d7a67-d1ac-469a-a0c2-94b9a22f4aa7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -41,6 +46,6 @@
       <name>text</name>
       <type>Main</type>
       <value>Epic sadface: Username is required</value>
-      <webElementGuid>a5bd7da4-4deb-4d5a-bc63-083168e6352d</webElementGuid>
+      <webElementGuid>a0f99247-d4b5-4ae7-a0c4-f350555e49d3</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

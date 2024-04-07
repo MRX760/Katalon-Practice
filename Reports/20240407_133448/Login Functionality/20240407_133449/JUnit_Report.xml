@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login Functionality" time="157.375" tests="5" failures="1" errors="0">
+   <testsuite name="Login Functionality" tests="5" failures="1" errors="0" time="157.375" skipped="0" timestamp="07-04-2024T13:34:52" hostname="tan - LOQ15" id="Test Suites/Login Functionality">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449"/>
+         <property name="logFiles" value="C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471736784.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471736833.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471771420.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471771448.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471805978.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471806004.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471840878.png, C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471840904.png"/>
+         <property name="hostName" value="tan - LOQ15"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.4.0.212"/>
+         <property name="browser" value="Firefox 124.0"/>
+         <property name="hostAddress" value="192.168.1.8"/>
+         <property name="sessionId" value="c83d3c57-e47e-472e-a883-a7346ae133c5"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials" time="5.473" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials" status="PASSED">
+         <system-out><![CDATA[07-04-2024T13:34:52 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials
+
+07-04-2024T13:34:52 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T13:34:53 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T13:34:53 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T13:34:55 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T13:34:55 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:34:56 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:34:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T13:34:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T13:34:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name"), username): Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T13:34:56 - [MESSAGE][PASSED] - Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T13:34:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_password")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T13:34:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T13:34:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password"), password): Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T13:34:57 - [MESSAGE][PASSED] - Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T13:34:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:34:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:34:57 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/span_Products"), 0): Object 'Object Repository/Page_Swag Labs/span_Products' is present
+
+07-04-2024T13:34:57 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T13:34:57 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/span_Products' is present
+
+07-04-2024T13:34:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T13:34:58 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials" time="4.361" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials" status="PASSED">
+         <system-out><![CDATA[07-04-2024T13:34:58 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials
+
+07-04-2024T13:34:58 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T13:34:58 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T13:34:58 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T13:34:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T13:34:59 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:35:00 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:35:00 - [TEST_STEP][PASSED] - comment("Negative test case begin here"): Negative test case begin here
+
+07-04-2024T13:35:00 - [MESSAGE][INFO] - Negative test case begin here
+
+07-04-2024T13:35:00 - [TEST_STEP][PASSED] - comment("Case 1: Empty username & password"): Case 1: Empty username & password
+
+07-04-2024T13:35:00 - [MESSAGE][INFO] - Case 1: Empty username & password
+
+07-04-2024T13:35:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:35:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:35:00 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-username"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T13:35:00 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T13:35:00 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T13:35:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T13:35:02 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password" time="34.899" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password FAILED.&#xa;Reason:&#xa;com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)&#xa;	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)&#xa;	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)&#xa;	at Empty password.run(Empty password:30)&#xa;	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)&#xa;	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)&#xa;	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)&#xa;	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)&#xa;	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)&#xa;	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xa;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#xa;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xa;Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required&#xa;' or . = 'Epic sadface: Password is required&#xa;')]' not found&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)&#xa;	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)&#xa;	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)&#xa;	... 23 more&#xa;"/>
+         <system-out><![CDATA[07-04-2024T13:36:46 - [TEST_CASE][FAILED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 23 more
+
+
+07-04-2024T13:36:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T13:36:46 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+07-04-2024T13:36:46 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T13:36:46 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T13:36:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T13:36:48 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:36:49 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:36:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T13:36:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T13:36:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_user-name"), username): Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T13:36:49 - [MESSAGE][PASSED] - Text 'standard_user' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T13:36:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:36:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:36:49 - [TEST_STEP][FAILED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-password"), 0): Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 23 more
+)
+
+07-04-2024T13:36:49 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T13:37:20 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+07-04-2024T13:37:20 - [MESSAGE][FAILED] - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+[[ATTACHMENT|C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471840878.png]]
+
+07-04-2024T13:37:20 - [MESSAGE][FAILED] - Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 23 more
+)
+[[ATTACHMENT|C:\\Users\\tan\\git\\Katalon-Practice\\Reports\\20240407_133448\\Login Functionality\\20240407_133449\\1712471840904.png]]]]></system-out>
+         <system-err><![CDATA[07-04-2024T13:36:46 - [TEST_CASE][FAILED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 23 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username" time="4.926" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username" status="PASSED">
+         <system-out><![CDATA[07-04-2024T13:37:20 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username
+
+07-04-2024T13:37:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T13:37:20 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+07-04-2024T13:37:21 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T13:37:21 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T13:37:23 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T13:37:23 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:37:24 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:37:24 - [TEST_STEP][PASSED] - click(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_password")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T13:37:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T13:37:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password"), password): Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T13:37:24 - [MESSAGE][PASSED] - Text 'secret_sauce' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T13:37:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:37:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:37:25 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-username"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T13:37:25 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T13:37:25 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-username' is present
+
+07-04-2024T13:37:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T13:37:25 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials" time="4.058" classname="Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials" status="PASSED">
+         <system-out><![CDATA[07-04-2024T13:37:25 - [TEST_CASE][PASSED] - Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials
+
+07-04-2024T13:37:25 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+07-04-2024T13:37:25 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+07-04-2024T13:37:25 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+07-04-2024T13:37:27 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+07-04-2024T13:37:27 - [TEST_STEP][PASSED] - navigateToUrl("https://www.saucedemo.com/"): Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:37:28 - [MESSAGE][PASSED] - Navigate to 'https://www.saucedemo.com/' successfully
+
+07-04-2024T13:37:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T13:37:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name' is clicked on
+
+07-04-2024T13:37:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name"), "awd"): Text 'awd' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T13:37:28 - [MESSAGE][PASSED] - Text 'awd' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'
+
+07-04-2024T13:37:28 - [TEST_STEP][PASSED] - click(findTestObject("Page_Swag Labs/Login_page/input_Swag Labs_password")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T13:37:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password' is clicked on
+
+07-04-2024T13:37:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password"), "wad"): Text 'wad' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T13:37:28 - [MESSAGE][PASSED] - Text 'wad' is set on object 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password'
+
+07-04-2024T13:37:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button")): Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:37:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button' is clicked on
+
+07-04-2024T13:37:28 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Swag Labs/Login_page/failed-login-text-wrong-credentials"), 0): Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-wrong-credentials' is present
+
+07-04-2024T13:37:29 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+07-04-2024T13:37:29 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-wrong-credentials' is present
+
+07-04-2024T13:37:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+07-04-2024T13:37:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[07-04-2024T13:34:52 - [TEST_SUITE][FAILED] - Login Functionality: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[07-04-2024T13:34:52 - [TEST_SUITE][FAILED] - Login Functionality: Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify object 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' is present
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:92)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1503)
+	at Empty password.run(Empty password:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:150)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:180)
+	at TempTestSuite1712471689651.run(TempTestSuite1712471689651.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_Swag Labs/Login_page/failed-login-text-password' located by '//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required
+' or . = 'Epic sadface: Password is required
+')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

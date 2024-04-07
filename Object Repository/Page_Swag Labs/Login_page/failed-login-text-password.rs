@@ -8,7 +8,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Password is required' or . = 'Epic sadface: Password is required')]</value>
+         <value>//*[(text() = 'Epic sadface: Password is required' or . = 'Epic sadface: Password is required')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -24,15 +24,21 @@
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>[data-test=&quot;error-button&quot;]</value>
+      </entry>
+   </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>error-message-container error</value>
-      <webElementGuid>6366375f-f29f-4750-86ed-5b6c44ac0867</webElementGuid>
+      <webElementGuid>f995bd20-a8b0-425d-aef7-1d79c8ab6447</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -40,6 +46,6 @@
       <name>text</name>
       <type>Main</type>
       <value>Epic sadface: Password is required</value>
-      <webElementGuid>003e1696-e838-42d5-90ca-85a842b03e89</webElementGuid>
+      <webElementGuid>d95c3120-eff1-46b9-b009-df0a9fb8328c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

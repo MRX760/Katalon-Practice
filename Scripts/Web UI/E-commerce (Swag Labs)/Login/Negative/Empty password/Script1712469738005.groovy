@@ -23,7 +23,7 @@ WebUI.navigateToUrl('https://www.saucedemo.com/')
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name'), username)
+WebUI.setText(findTestObject('Page_Swag Labs/Login_page/input_Swag Labs_user-name'), GlobalVariable.username)
 
 WebUI.click(findTestObject('Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button'))
 
