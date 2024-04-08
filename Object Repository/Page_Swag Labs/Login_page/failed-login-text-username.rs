@@ -30,7 +30,7 @@
          <value>[data-test=&quot;error-button&quot;]</value>
       </entry>
    </smartLocatorCollection>
-   <smartLocatorEnabled>true</smartLocatorEnabled>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>class</name>
       <type>Main</type>
       <value>error-message-container error</value>
-      <webElementGuid>f96d7a67-d1ac-469a-a0c2-94b9a22f4aa7</webElementGuid>
+      <webElementGuid>2a7aecaa-4594-4ef7-8e3e-3f22d005144b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,6 +46,6 @@
       <name>text</name>
       <type>Main</type>
       <value>Epic sadface: Username is required</value>
-      <webElementGuid>a0f99247-d4b5-4ae7-a0c4-f350555e49d3</webElementGuid>
+      <webElementGuid>41f3feba-aa6b-455e-930f-68a5dd3a0a15</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

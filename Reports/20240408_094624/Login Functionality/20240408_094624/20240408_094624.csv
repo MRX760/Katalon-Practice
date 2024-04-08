@@ -1,0 +1,51 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login Functionality,Firefox 124.0,,,08-04-2024 09:46:27,08-04-2024 09:46:53,25.978s,PASSED
+,,,,,,,
+Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials,Firefox 124.0,Verify user can login using correct credentials,,08-04-2024 09:46:27,08-04-2024 09:46:33,5.823s,PASSED
+"openBrowser("""")",Firefox 124.0,,,08-04-2024 09:46:27,08-04-2024 09:46:30,2.885s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Firefox 124.0,,,08-04-2024 09:46:30,08-04-2024 09:46:31,0.933s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name""))",Firefox 124.0,,,08-04-2024 09:46:31,08-04-2024 09:46:31,0.368s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name""), username)",Firefox 124.0,,,08-04-2024 09:46:31,08-04-2024 09:46:32,0.144s,PASSED
+"click(findTestObject(""Page_Swag Labs/Login_page/input_Swag Labs_password""))",Firefox 124.0,,,08-04-2024 09:46:32,08-04-2024 09:46:32,0.263s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password""), password)",Firefox 124.0,,,08-04-2024 09:46:32,08-04-2024 09:46:32,0.078s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button""))",Firefox 124.0,,,08-04-2024 09:46:32,08-04-2024 09:46:32,0.268s,PASSED
+"verifyElementPresent(findTestObject(""Page_Swag Labs/span_Products""), 0)",Firefox 124.0,,,08-04-2024 09:46:32,08-04-2024 09:46:32,0.062s,PASSED
+closeBrowser(),Firefox 124.0,,,08-04-2024 09:46:32,08-04-2024 09:46:33,0.631s,PASSED
+,,,,,,,
+Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials,Firefox 124.0,Verify user cannot login using empty credentials,login-001,08-04-2024 09:46:33,08-04-2024 09:46:37,4.244s,PASSED
+"openBrowser("""")",Firefox 124.0,,,08-04-2024 09:46:33,08-04-2024 09:46:35,1.574s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Firefox 124.0,,,08-04-2024 09:46:35,08-04-2024 09:46:35,0.656s,PASSED
+"comment(""Negative test case begin here"")",Firefox 124.0,,,08-04-2024 09:46:35,08-04-2024 09:46:35,0.025s,PASSED
+"comment(""Case 1: Empty username & password"")",Firefox 124.0,,,08-04-2024 09:46:35,08-04-2024 09:46:35,0.003s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button""))",Firefox 124.0,,,08-04-2024 09:46:35,08-04-2024 09:46:35,0.289s,PASSED
+"verifyElementPresent(findTestObject(""Page_Swag Labs/Login_page/failed-login-text-username""), 0)",Firefox 124.0,,,08-04-2024 09:46:35,08-04-2024 09:46:36,0.035s,PASSED
+closeBrowser(),Firefox 124.0,,,08-04-2024 09:46:36,08-04-2024 09:46:37,1.605s,PASSED
+,,,,,,,
+Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password,Firefox 124.0,Verify user cannot login using only username,login-003,08-04-2024 09:46:37,08-04-2024 09:46:42,4.478s,PASSED
+"openBrowser("""")",Firefox 124.0,,,08-04-2024 09:46:37,08-04-2024 09:46:39,1.814s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Firefox 124.0,,,08-04-2024 09:46:39,08-04-2024 09:46:40,1.125s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name""))",Firefox 124.0,,,08-04-2024 09:46:40,08-04-2024 09:46:40,0.299s,PASSED
+"setText(findTestObject(""Page_Swag Labs/Login_page/input_Swag Labs_user-name""), username)",Firefox 124.0,,,08-04-2024 09:46:40,08-04-2024 09:46:41,0.084s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button""))",Firefox 124.0,,,08-04-2024 09:46:41,08-04-2024 09:46:41,0.267s,PASSED
+"verifyElementPresent(findTestObject(""Page_Swag Labs/Login_page/failed-login-text-password""), 0)",Firefox 124.0,,,08-04-2024 09:46:41,08-04-2024 09:46:41,0.037s,PASSED
+closeBrowser(),Firefox 124.0,,,08-04-2024 09:46:41,08-04-2024 09:46:42,0.795s,PASSED
+,,,,,,,
+Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username,Firefox 124.0,Verify user cannot login using only password,login-002,08-04-2024 09:46:42,08-04-2024 09:46:49,7.162s,PASSED
+"openBrowser("""")",Firefox 124.0,,,08-04-2024 09:46:42,08-04-2024 09:46:43,1.607s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Firefox 124.0,,,08-04-2024 09:46:43,08-04-2024 09:46:45,2.176s,PASSED
+"click(findTestObject(""Page_Swag Labs/Login_page/input_Swag Labs_password""))",Firefox 124.0,,,08-04-2024 09:46:45,08-04-2024 09:46:46,0.288s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password""), password)",Firefox 124.0,,,08-04-2024 09:46:46,08-04-2024 09:46:46,0.084s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button""))",Firefox 124.0,,,08-04-2024 09:46:46,08-04-2024 09:46:46,0.256s,PASSED
+"verifyElementPresent(findTestObject(""Page_Swag Labs/Login_page/failed-login-text-username""), 0)",Firefox 124.0,,,08-04-2024 09:46:46,08-04-2024 09:46:46,0.045s,PASSED
+closeBrowser(),Firefox 124.0,,,08-04-2024 09:46:46,08-04-2024 09:46:49,2.650s,PASSED
+,,,,,,,
+Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials,Firefox 124.0,Verify user cannot login using incorrect credentials,login-004,08-04-2024 09:46:49,08-04-2024 09:46:53,4.097s,PASSED
+"openBrowser("""")",Firefox 124.0,,,08-04-2024 09:46:49,08-04-2024 09:46:50,1.510s,PASSED
+"navigateToUrl(""https://www.saucedemo.com/"")",Firefox 124.0,,,08-04-2024 09:46:50,08-04-2024 09:46:51,0.752s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name""))",Firefox 124.0,,,08-04-2024 09:46:51,08-04-2024 09:46:51,0.296s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_user-name""), ""awd"")",Firefox 124.0,,,08-04-2024 09:46:51,08-04-2024 09:46:51,0.066s,PASSED
+"click(findTestObject(""Page_Swag Labs/Login_page/input_Swag Labs_password""))",Firefox 124.0,,,08-04-2024 09:46:51,08-04-2024 09:46:52,0.244s,PASSED
+"setText(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_password""), ""wad"")",Firefox 124.0,,,08-04-2024 09:46:52,08-04-2024 09:46:52,0.061s,PASSED
+"click(findTestObject(""Object Repository/Page_Swag Labs/Login_page/input_Swag Labs_login-button""))",Firefox 124.0,,,08-04-2024 09:46:52,08-04-2024 09:46:52,0.255s,PASSED
+"verifyElementPresent(findTestObject(""Page_Swag Labs/Login_page/failed-login-text-wrong-credentials""), 0)",Firefox 124.0,,,08-04-2024 09:46:52,08-04-2024 09:46:52,0.034s,PASSED
+closeBrowser(),Firefox 124.0,,,08-04-2024 09:46:52,08-04-2024 09:46:53,0.822s,PASSED

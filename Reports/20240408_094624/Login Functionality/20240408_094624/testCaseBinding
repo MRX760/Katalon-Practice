@@ -1,0 +1,5 @@
+{"testCaseName":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials","testCaseId":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Positive/Correct credentials","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials","testCaseId":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty credentials","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password","testCaseId":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty password","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username","testCaseId":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Empty username","iterationVariableName":""}
+{"testCaseName":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials","testCaseId":"Test Cases/Web UI/E-commerce (Swag Labs)/Login/Negative/Wrong credentials","iterationVariableName":""}
