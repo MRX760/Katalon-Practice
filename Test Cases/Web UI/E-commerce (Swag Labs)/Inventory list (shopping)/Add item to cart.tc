@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user can add item to cart</description>
+   <name>Add item to cart</name>
+   <tag>tc-006</tag>
+   <comment></comment>
+   <testCaseGuid>0bb203bb-5aaf-4603-9172-4c62965ad8fa</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a22903d8-ab68-4688-9c76-1b36a8cca07b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bc45d02e-d075-466e-8bb6-9879dd3a4252</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>a22903d8-ab68-4688-9c76-1b36a8cca07b</id>
+      <masked>false</masked>
+      <name>num_of_child</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>bc45d02e-d075-466e-8bb6-9879dd3a4252</id>
+      <masked>false</masked>
+      <name>item_list</name>
+   </variable>
+</TestCaseEntity>

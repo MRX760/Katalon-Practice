@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user must login before accessing inventory</description>
+   <name>Redirect to inventory without login</name>
+   <tag>tc-005</tag>
+   <comment></comment>
+   <testCaseGuid>375cf459-4e82-49c4-9701-cb01bb0d3aa0</testCaseGuid>
+</TestCaseEntity>

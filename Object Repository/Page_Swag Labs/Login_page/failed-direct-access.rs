@@ -1,24 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>failed-login-text-username</name>
+   <name>failed-direct-access</name>
    <tag></tag>
-   <elementGuidId>9cbd1596-9dc6-4c1b-9b51-e8e9702d41f8</elementGuidId>
+   <elementGuidId>3cb92c89-f75c-4379-bc5a-63a0ba4106c4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>IMAGE</key>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>color: #132322;</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'error-message-container error' and (text() = 'Epic sadface: Username is required' or . = 'Epic sadface: Username is required')]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>//*[(text() = concat(&quot;Epic sadface: You can only access &quot; , &quot;'&quot; , &quot;/inventory.html&quot; , &quot;'&quot; , &quot; when you are logged in.&quot;) or . = concat(&quot;Epic sadface: You can only access &quot; , &quot;'&quot; , &quot;/inventory.html&quot; , &quot;'&quot; , &quot; when you are logged in.&quot;)) and @class = 'error-message-container error']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -33,17 +22,17 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>text</name>
       <type>Main</type>
-      <value>error-message-container error</value>
-      <webElementGuid>cd45679f-1692-43fd-a015-5f1abc126241</webElementGuid>
+      <value>Epic sadface: You can only access '/inventory.html' when you are logged in.</value>
+      <webElementGuid>3d2508be-32e4-4907-a04f-9b011f05a8ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>Epic sadface: Username is required</value>
-      <webElementGuid>34a65241-6d66-44e8-99e9-560674aea621</webElementGuid>
+      <value>error-message-container error</value>
+      <webElementGuid>c013ce6a-719d-4a51-bc69-ec1b40a5c2e9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
