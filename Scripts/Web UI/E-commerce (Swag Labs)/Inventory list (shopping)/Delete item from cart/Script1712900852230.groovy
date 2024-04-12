@@ -54,3 +54,5 @@ CustomKeywords.'web.swag.VerifySimilarity'(findTestObject('Page_Swag Labs/Checko
 CustomKeywords.'web.swag.VerifySimilarity'(findTestObject('Page_Swag Labs/Checkout_cart/cart_item_list'), del_item_identifier, 
     'del')
 
+WebUI.closeBrowser()
+

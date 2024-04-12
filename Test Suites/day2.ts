@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>Add cart and Delete cart</description>
+   <name>day2</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>d458b588-177e-4936-82ee-c02854402951</testSuiteGuid>
+   <testCaseLink>
+      <guid>65479adc-5936-4694-8765-8894bbd7a5e7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web UI/E-commerce (Swag Labs)/Inventory list (shopping)/Add item to cart</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a22903d8-ab68-4688-9c76-1b36a8cca07b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bc45d02e-d075-466e-8bb6-9879dd3a4252</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6717bad4-6462-44c2-b1f9-a31af6d39f75</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d50d8d2f-7c34-4285-a14d-35da89857143</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Web UI/E-commerce (Swag Labs)/Inventory list (shopping)/Delete item from cart</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e01f9953-ab45-4295-b82f-77e4e97559cb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0d058cbc-06dd-46d2-a95e-ac3fbbd4c6b5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4b01d331-df62-46f9-b741-373be17c8169</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
