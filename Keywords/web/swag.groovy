@@ -98,12 +98,25 @@ class swag {
 		else if ("desc".equalsIgnoreCase(type)) {
 			temp_obj = GenerateNewObject(base, "/div["+num+"]/div[2]/div[1]/div[1]", "desc")
 		}
+		else if ("dbtn".equalsIgnoreCase(type)) {
+			temp_obj = GenerateNewObject(base, "/div["+num+"]/div[2]/div[2]/button", "btn")
+		}
+		else if ("dprice".equalsIgnoreCase(type)) {
+			temp_obj = GenerateNewObject(base, "/div["+num+"]/div[2]/div[2]/div", "price")
+		}
+		else if ("dname".equalsIgnoreCase(type)) {
+			temp_obj = GenerateNewObject(base, "/div["+num+"]/div[2]/a", "name")
+		}
+		else if ("ddesc".equalsIgnoreCase(type)) {
+			temp_obj = GenerateNewObject(base, "/div["+num+"]/div[2]/div[1]", "desc")
+		}
 		return temp_obj
 	}
 
 	/**
 	 * Add items to cart, also count the item
 	 * arguments => table/list object 
+	 * @return list of obj added item
 	 */
 	@Keyword
 	public List add_item(TestObject object) {
@@ -115,12 +128,12 @@ class swag {
 		else {
 			// randomly generate how many item added to cart
 			def random = new Random()
-			int rand = random.nextInt(6) + 1
+			int rand = random.nextInt(child) + 1
 			KeywordUtil.logInfo("Start Generate Num. Items add: "+rand)
 			List num = GenerateNum(rand, child)
 			// get item attribute (name, price, description, button)
 			KeywordUtil.logInfo("Start Getting Item Attributes. List: "+num)
-			def valid_val = GetItemAttributes(object, num)
+			def valid_val = GetItemAttributes(object, num, "inventory")
 			//click the add button based on sequence
 			KeywordUtil.logInfo("Start adding item by clicking button")
 			for (int i=0; i<valid_val.size(); i++) {
@@ -134,11 +147,11 @@ class swag {
 	
 	/**
 	 * get all item identifier per item index
-	 * @param valid_val (list of item)
-	 * @return
+	 * @param valid_val (list of object item addresses)
+	 * @return Id (text of id dictionary)
 	 */
 	@Keyword
-	public getItemIdentifier (List object){
+	public List getItemIdentifier (List object){
 		def Identifier=[]
 		def temp=[:]
 		for(i in object) {
@@ -182,19 +195,32 @@ class swag {
 	 * arguments => object, list of child position (item)
 	 * =GenerateNum(getHtmlElementChild(object), getHtmlElementChild(object)) => for nums
 	 */ 
-	private List GetItemAttributes(TestObject object, List nums) {
+	private List GetItemAttributes(TestObject object, List nums, String type) {
 		def valid_val = []
 		def temp = [:]
 		// inserting object to be validated in cart (check if it the same or not)
-		for(i in nums) {
-			temp = [:]
-			temp["btn"]=getObject(object, i, "btn")
-			temp["price"]=getObject(object, i, "price")
-			temp["name"]=getObject(object, i, "name")
-			temp["desc"]=getObject(object, i, "desc")
-			valid_val << temp
+		if(type == "inventory") {
+			for(i in nums) {
+				temp = [:]
+						temp["btn"]=getObject(object, i, "btn")
+						temp["price"]=getObject(object, i, "price")
+						temp["name"]=getObject(object, i, "name")
+						temp["desc"]=getObject(object, i, "desc")
+						valid_val << temp
+			}
+			return valid_val			
 		}
-		return valid_val
+		else if(type=="checkout_cart") {
+			for(i in nums) {
+				temp = [:]
+						temp["btn"]=getObject(object, i+2, "dbtn")
+						temp["price"]=getObject(object, i+2, "dprice")
+						temp["name"]=getObject(object, i+2, "dname")
+						temp["desc"]=getObject(object, i+2, "ddesc")
+						valid_val << temp
+			}
+			return valid_val
+		}
 	}
 	/**
 	 * Print list of attributes
@@ -211,40 +237,129 @@ class swag {
 	 * @return
 	 */
 	@Keyword
-	public VerifySimilarity(TestObject object, List item_attribute) {
+	public VerifySimilarity(TestObject object, List item_attribute, String type) {
 		//verify item type qty
-		if(getHtmlElementChild(object)-2!=item_attribute.size()) {
-			KeywordUtil.markFailed("An item is missing!")
-		}
-		//verify item identifier (match the inventory list or not)
 		Boolean diff = false;
 		TestObject temp = null
-		for (int i=0; i<item_attribute.size(); i++) {
-			//check the name
-			temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/a", "temp")
-			if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() != item_attribute[i]["name"]) {
-				println(item_attribute[i]['name'])
-				diff = true
-				break
+		if (type=='add') {
+			if(getHtmlElementChild(object)-2!=item_attribute.size()) {
+				KeywordUtil.markFailed("An item is missing!")
 			}
-			temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/div[1]", "temp")
-			if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() != item_attribute[i]["desc"]) {
-				println(item_attribute[i]['temp'])
-				diff = true
-				break
+			//verify item identifier (match the inventory list or not)
+			for (int i=0; i<item_attribute.size(); i++) {
+				//check the name
+				if(item_attribute[i]!=null) {
+					temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/a/div", "temp")
+					if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() != item_attribute[i]["name"]) {
+						diff = true
+						break
+					}
+					temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/div[1]", "temp")
+					if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() != item_attribute[i]["desc"]) {
+						diff = true
+						break
+					}
+					temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/div[2]/div", "temp")
+					if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() != item_attribute[i]["price"]) {
+										
+						diff = true
+						break
+					}
+				}
 			}
-			temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/div[2]/div", "temp")
-			if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() != item_attribute[i]["price"]) {
-				println(item_attribute[i]['price'])
-				diff = true
-				break
+			if (diff) {
+				KeywordUtil.markFailed("Item attributes/identifier is different!")
+			}			
+		}
+		else if (type=="del") {
+//			def child = getHtmlElementChild(object)-2
+//			if(child==0) KeywordUtil.markPassed("Items deleted")
+//			if(child==item_attribute.size()) {
+//				KeywordUtil.markFailed("Item is not deleted")
+//			}
+			for (int i=0; i<item_attribute.size(); i++) {
+				//with error handling
+				temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/a/div", "temp")
+				if(WebUiBuiltInKeywords.verifyElementPresent(temp, 5, FailureHandling.OPTIONAL)) {
+					if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() == item_attribute[i]["name"]) {
+						diff = true
+						break
+					}					
+				}
+				temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/div[1]", "temp")
+				if(WebUiBuiltInKeywords.verifyElementPresent(temp, 5, FailureHandling.OPTIONAL)) {
+					if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() == item_attribute[i]["desc"]) {
+						diff = true
+						break
+					}					
+				}
+				temp = GenerateNewObject(object, "/div["+(i+3)+"]/div[2]/div[2]/div", "temp")
+				if(WebUiBuiltInKeywords.verifyElementPresent(temp, 5, FailureHandling.OPTIONAL)) {
+					if(WebUiBuiltInKeywords.findWebElement(temp, 10).getText() == item_attribute[i]["price"]) {
+						diff = true
+						break
+					}					
+				}
+			}
+			if (diff) {
+				KeywordUtil.markFailed("Deleted item is still there!")
 			}
 		}
-		if (diff) {
-			println(WebUiBuiltInKeywords.findWebElement(temp, 10).getText())
-			println(WebUiBuiltInKeywords.findWebElement(temp, 10).getText()!=item_attribute[0]['desc'])
-			KeywordUtil.markFailed("Item attributes/identifier is different!")
+		
+	}
+	
+	/**
+	 * 
+	 * @param object
+	 * @return deleted item id
+	 */
+	@Keyword
+	public List DeleteItem(TestObject object) {
+		int child = getHtmlElementChild(object)
+		//if child not detected, then fail
+		if (child<=2 || child==null) {
+			KeywordUtil.markFailed("Element has no child")
 		}
+		def random = new Random()
+		int rand = random.nextInt(child-2) + 1
+		KeywordUtil.logInfo("Start Generate Num. Items deleted: "+rand)
+		List num = GenerateNum(rand, child-2)
+		KeywordUtil.logInfo("Start Getting Item Attributes. List: "+num)
+		//get objects addresses
+		def valid_val = GetItemAttributes(object, num, "checkout_cart")
+		//get deleted item identifier
+		List Identifier = getItemIdentifier(valid_val)
+		//click the remove button based on sequence
+		KeywordUtil.logInfo("Start deleting item by clicking button")
+		for (int i=0; i<valid_val.size(); i++) {
+			KeywordUtil.logInfo("deleting item number "+(i+1))
+			clickElement(valid_val[i]["btn"])
+		}
+		//pass the deleted item identifier
+		List del_item_id = []
+		for(i in Identifier) {
+			del_item_id << i
+		}
+		return del_item_id
+	}
+	
+	@Keyword
+	public List delete_add_identifier(List AddItemId, List DeleteItemID) {
+		def indices = []
+		AddItemId.eachWithIndex { item, index ->
+			DeleteItemID.each { subItem ->
+				if (item == subItem) {
+					indices << index
+				}
+			}
+		}
+		//sort the indices to be max-min value
+//		indices.sort { a, b -> b <=> a }
+		for(i in indices) {
+			if (i!=-1) AddItemId[i]=null 
+//				AddItemId.remove(i)
+		}
+		return AddItemId
 	}
 	
 }

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verify user can delete item from cart</description>
+   <name>Delete item from cart</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8114287e-d426-46f0-9877-6c54b0c33d40</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e01f9953-ab45-4295-b82f-77e4e97559cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0d058cbc-06dd-46d2-a95e-ac3fbbd4c6b5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4b01d331-df62-46f9-b741-373be17c8169</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>e01f9953-ab45-4295-b82f-77e4e97559cb</id>
+      <masked>false</masked>
+      <name>item_list</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>0d058cbc-06dd-46d2-a95e-ac3fbbd4c6b5</id>
+      <masked>false</masked>
+      <name>del_item_identifier</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>4b01d331-df62-46f9-b741-373be17c8169</id>
+      <masked>false</masked>
+      <name>item_identifier</name>
+   </variable>
+</TestCaseEntity>

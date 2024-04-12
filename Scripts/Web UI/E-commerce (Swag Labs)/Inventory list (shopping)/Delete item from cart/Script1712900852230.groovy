@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('https://www.saucedemo.com/')
 
@@ -41,5 +40,17 @@ WebUI.comment('Verify similarity of items identity. Input is dict of items ident
 CustomKeywords.'web.swag.VerifySimilarity'(findTestObject('Page_Swag Labs/Checkout_cart/cart_item_list'), item_identifier, 
     'add')
 
-WebUI.closeBrowser()
+WebUI.comment('END OF ADD ITEM TEST CASE')
+
+del_item_identifier = CustomKeywords.'web.swag.DeleteItem'(findTestObject('Page_Swag Labs/Checkout_cart/cart_item_list'))
+
+item_identifier = CustomKeywords.'web.swag.delete_add_identifier'(item_identifier, del_item_identifier)
+
+WebUI.comment('Verify similarity of deleted and remaining items identity on the cart. Input is dict of items identity')
+
+CustomKeywords.'web.swag.VerifySimilarity'(findTestObject('Page_Swag Labs/Checkout_cart/cart_item_list'), item_identifier, 
+    'add')
+
+CustomKeywords.'web.swag.VerifySimilarity'(findTestObject('Page_Swag Labs/Checkout_cart/cart_item_list'), del_item_identifier, 
+    'del')
 
