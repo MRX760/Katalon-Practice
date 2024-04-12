@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "67D3F5F283CDEB3ADAEE12BECD6AA100",
+  "keywordFileContentHash": "885BD18FEFC18B3AA64B4361AC73B263",
   "keywordClasses": [
     {
       "name": "web.swag",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * get number of child\n\t */"
+          ]
         },
         {
           "name": "add_item",
@@ -39,8 +38,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * Add items to cart, also count the item\n\t * arguments \u003d\u003e table/list object \n\t */"
+          ]
         },
         {
           "name": "getItemIdentifier",
@@ -58,8 +56,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\n\t * get all item identifier per item index\n\t * @param valid_val (list of item)\n\t * @return\n\t */"
+          ]
         },
         {
           "name": "VerifySimilarity",
@@ -89,12 +86,73 @@
                 "genericsTypes": [],
                 "errorOnParsing": false
               }
+            },
+            {
+              "name": "type",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
             }
-          ],
-          "javadoc": "/**\n\t * \n\t * @param object\n\t * @param item_attribute\n\t * @return\n\t */"
+          ]
+        },
+        {
+          "name": "DeleteItem",
+          "parameters": [
+            {
+              "name": "object",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "com.kms.katalon.core.testobject.TestObject",
+                "unresolvedClassName": "TestObject",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "delete_add_identifier",
+          "parameters": [
+            {
+              "name": "AddItemId",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.List",
+                "unresolvedClassName": "List",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "DeleteItemID",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.util.List",
+                "unresolvedClassName": "List",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
