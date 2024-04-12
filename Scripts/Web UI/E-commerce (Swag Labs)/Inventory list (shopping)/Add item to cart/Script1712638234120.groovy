@@ -34,7 +34,13 @@ KeywordUtil.logInfo('child: ' + num_of_child)
 
 WebUI.comment('script to add_item, and store the validation value to map')
 
-item_list = CustomKeywords.'web.swag.add_item'(findTestObject('Page_Swag Labs/Inventory_list/item_list'))
+item_lists = CustomKeywords.'web.swag.add_item'(findTestObject('Page_Swag Labs/Inventory_list/item_list'))
+
+item_identifier = CustomKeywords.'web.swag.getItemIdentifier'(item_lists)
 
 WebUI.click(findTestObject('Page_Swag Labs/Inventory_list/cart'))
+
+CustomKeywords.'web.swag.VerifySimilarity'(findTestObject('Page_Swag Labs/Checkout_cart/cart_item_list'), item_identifier)
+
+WebUI.closeBrowser()
 

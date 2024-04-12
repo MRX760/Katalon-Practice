@@ -17,6 +17,12 @@
       <value></value>
       <variableId>bc45d02e-d075-466e-8bb6-9879dd3a4252</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6717bad4-6462-44c2-b1f9-a31af6d39f75</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>0</defaultValue>
       <description></description>
@@ -29,6 +35,13 @@
       <description></description>
       <id>bc45d02e-d075-466e-8bb6-9879dd3a4252</id>
       <masked>false</masked>
-      <name>item_list</name>
+      <name>item_lists</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>6717bad4-6462-44c2-b1f9-a31af6d39f75</id>
+      <masked>false</masked>
+      <name>item_identifier</name>
    </variable>
 </TestCaseEntity>
